@@ -13,6 +13,10 @@
 		E871014C2AAA3AE40034C8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E871014A2AAA3AE40034C8EE /* Main.storyboard */; };
 		E871014E2AAA3AE50034C8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E871014D2AAA3AE50034C8EE /* Assets.xcassets */; };
 		E87101512AAA3AE50034C8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E871014F2AAA3AE50034C8EE /* LaunchScreen.storyboard */; };
+		E871015E2AAA3C0D0034C8EE /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871015D2AAA3C0D0034C8EE /* ZLSwipeableView.swift */; };
+		E87101602AAA3C140034C8EE /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871015F2AAA3C140034C8EE /* ViewManager.swift */; };
+		E87101622AAA3C1C0034C8EE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87101612AAA3C1C0034C8EE /* Direction.swift */; };
+		E87101642AAA3C220034C8EE /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87101632AAA3C220034C8EE /* Scheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E871014D2AAA3AE50034C8EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E87101502AAA3AE50034C8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E87101522AAA3AE50034C8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E871015D2AAA3C0D0034C8EE /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
+		E871015F2AAA3C140034C8EE /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		E87101612AAA3C1C0034C8EE /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		E87101632AAA3C220034C8EE /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,10 @@
 		E871015A2AAA3B530034C8EE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E871015D2AAA3C0D0034C8EE /* ZLSwipeableView.swift */,
+				E871015F2AAA3C140034C8EE /* ViewManager.swift */,
+				E87101612AAA3C1C0034C8EE /* Direction.swift */,
+				E87101632AAA3C220034C8EE /* Scheduler.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -171,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87101492AAA3AE40034C8EE /* ViewController.swift in Sources */,
+				E87101642AAA3C220034C8EE /* Scheduler.swift in Sources */,
+				E871015E2AAA3C0D0034C8EE /* ZLSwipeableView.swift in Sources */,
+				E87101602AAA3C140034C8EE /* ViewManager.swift in Sources */,
 				E87101452AAA3AE40034C8EE /* AppDelegate.swift in Sources */,
 				E87101472AAA3AE40034C8EE /* SceneDelegate.swift in Sources */,
+				E87101622AAA3C1C0034C8EE /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
