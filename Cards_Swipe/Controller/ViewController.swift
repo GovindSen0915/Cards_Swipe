@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: - CustomViewProtocol
 extension ViewController: CustomViewProtocol {
     func didTapNextButton() {
         swipeableView.swipeTopView(inDirection: .Left)

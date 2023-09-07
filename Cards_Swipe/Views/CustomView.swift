@@ -48,7 +48,7 @@ class CustomView: UIView {
         
         self.chapterView.layer.cornerRadius = 16
         self.chapterView.layer.borderWidth = 1
-
+        
         setup()
         
     }
@@ -57,8 +57,6 @@ class CustomView: UIView {
         super.init(coder: aDecoder)
         self.commonInit()
         setup()
-
-        
     }
     
     override func layoutSubviews() {
@@ -78,15 +76,12 @@ class CustomView: UIView {
     }
     
     func setup() {
-        // Shadow
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.25
         layer.shadowOffset = CGSize(width: 0, height: 1.5)
         layer.shadowRadius = 4.0
         layer.shouldRasterize = true
         layer.rasterizationScale = UIScreen.main.scale
-        
-        // Corner Radius
         layer.cornerRadius = 12;
     }
     
@@ -96,7 +91,6 @@ class CustomView: UIView {
     
     @IBAction func previousButtonAction(_ sender: UIButton) {
         self.delegate?.didTapPreviousButton()
-
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {

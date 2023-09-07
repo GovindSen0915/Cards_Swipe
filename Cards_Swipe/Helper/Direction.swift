@@ -26,7 +26,7 @@ public struct Direction : OptionSet, CustomStringConvertible {
         self.rawValue = rawValue
     }
     
-    public static let None = Direction(rawValue: 0b0000)
+    public static let None = Direction([])
     public static let Left = Direction(rawValue: 0b0001)
     public static let Right = Direction(rawValue: 0b0010)
     public static let Up = Direction(rawValue: 0b0100)
