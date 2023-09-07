@@ -17,6 +17,8 @@
 		E87101602AAA3C140034C8EE /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871015F2AAA3C140034C8EE /* ViewManager.swift */; };
 		E87101622AAA3C1C0034C8EE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87101612AAA3C1C0034C8EE /* Direction.swift */; };
 		E87101642AAA3C220034C8EE /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87101632AAA3C220034C8EE /* Scheduler.swift */; };
+		E87101662AAA3E8C0034C8EE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87101652AAA3E8C0034C8EE /* CustomView.swift */; };
+		E87101682AAA3E920034C8EE /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87101672AAA3E920034C8EE /* CustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E871015F2AAA3C140034C8EE /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		E87101612AAA3C1C0034C8EE /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		E87101632AAA3C220034C8EE /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		E87101652AAA3E8C0034C8EE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		E87101672AAA3E920034C8EE /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +68,12 @@
 		E87101432AAA3AE40034C8EE /* Cards_Swipe */ = {
 			isa = PBXGroup;
 			children = (
+				E87101592AAA3B3A0034C8EE /* Application */,
 				E871015C2AAA3B680034C8EE /* Storyboard */,
+				E871016A2AAA3F3B0034C8EE /* Views */,
+				E87101692AAA3F340034C8EE /* Controller */,
 				E871015B2AAA3B5F0034C8EE /* Resources */,
 				E871015A2AAA3B530034C8EE /* Helper */,
-				E87101592AAA3B3A0034C8EE /* Application */,
-				E87101482AAA3AE40034C8EE /* ViewController.swift */,
 				E87101522AAA3AE50034C8EE /* Info.plist */,
 			);
 			path = Cards_Swipe;
@@ -109,6 +114,23 @@
 				E871014F2AAA3AE50034C8EE /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E87101692AAA3F340034C8EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E87101482AAA3AE40034C8EE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E871016A2AAA3F3B0034C8EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E87101672AAA3E920034C8EE /* CustomView.xib */,
+				E87101652AAA3E8C0034C8EE /* CustomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87101512AAA3AE50034C8EE /* LaunchScreen.storyboard in Resources */,
+				E87101682AAA3E920034C8EE /* CustomView.xib in Resources */,
 				E871014E2AAA3AE50034C8EE /* Assets.xcassets in Resources */,
 				E871014C2AAA3AE40034C8EE /* Main.storyboard in Resources */,
 			);
@@ -183,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87101492AAA3AE40034C8EE /* ViewController.swift in Sources */,
+				E87101662AAA3E8C0034C8EE /* CustomView.swift in Sources */,
 				E87101642AAA3C220034C8EE /* Scheduler.swift in Sources */,
 				E871015E2AAA3C0D0034C8EE /* ZLSwipeableView.swift in Sources */,
 				E87101602AAA3C140034C8EE /* ViewManager.swift in Sources */,
