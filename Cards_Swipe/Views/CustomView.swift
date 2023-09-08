@@ -17,15 +17,15 @@ protocol CustomViewProtocol: AnyObject {
 
 class CustomView: UIView {
     
-    @IBOutlet weak var wordLabel: UILabel!
+//    @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var pronounciationLabel: UILabel!
-    @IBOutlet weak var meaningLabel: UILabel!
-    @IBOutlet weak var hideMeaningButton: UIButton!
+//    @IBOutlet weak var pronounciationLabel: UILabel!
+//    @IBOutlet weak var meaningLabel: UILabel!
+//    @IBOutlet weak var hideMeaningButton: UIButton!
     
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var speakerButton: UIView!
+//    @IBOutlet weak var containerView: UIView!
+//    @IBOutlet weak var speakerButton: UIView!
     
     @IBOutlet weak var outerView: UIView!
     
@@ -38,13 +38,13 @@ class CustomView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
-        self.containerView.layer.cornerRadius = 8
-        self.containerView.layer.borderWidth = 1
-        self.containerView.layer.borderColor = .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0)
+//        self.containerView.layer.cornerRadius = 8
+//        self.containerView.layer.borderWidth = 1
+//        self.containerView.layer.borderColor = .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0)
         self.outerView.layer.cornerRadius = 12
         self.outerView.layer.borderWidth = 1
         self.outerView.layer.borderColor = .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0)
-        self.hideMeaningButton.layer.cornerRadius = 16
+//        self.hideMeaningButton.layer.cornerRadius = 16
         
         self.chapterView.layer.cornerRadius = 16
         self.chapterView.layer.borderWidth = 1
@@ -71,7 +71,7 @@ class CustomView: UIView {
             addSubview(contentView)
             contentView.frame = self.bounds
             contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            meaningLabel.isHidden = true
+//            meaningLabel.isHidden = true
         }
     }
     
@@ -97,9 +97,9 @@ class CustomView: UIView {
         self.delegate?.didTapNextButton()
     }
     
-    @IBAction func hideMeaningButtonAction(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-        meaningLabel.isHidden = !meaningLabel.isHidden
-    }
+//    @IBAction func hideMeaningButtonAction(_ sender: UIButton) {
+//        sender.isSelected = !sender.isSelected
+////        meaningLabel.isHidden = !meaningLabel.isHidden
+//    }
     
 }

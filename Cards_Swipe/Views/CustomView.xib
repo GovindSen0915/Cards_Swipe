@@ -2,28 +2,20 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="VC_Over_View" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="Cards_Swipe" customModuleProvider="target">
             <connections>
                 <outlet property="chapterName" destination="mHC-e6-MWc" id="ywj-Wo-Rxh"/>
                 <outlet property="chapterNumber" destination="TfL-j1-qDH" id="gFx-Ls-uYA"/>
                 <outlet property="chapterView" destination="q5X-Wq-STi" id="JcX-5D-PuX"/>
-                <outlet property="containerView" destination="2xz-6s-jWP" id="EIR-kB-hEe"/>
-                <outlet property="hideMeaningButton" destination="phf-OJ-K0o" id="ypN-e1-0Ej"/>
-                <outlet property="meaningLabel" destination="7sZ-ns-y2T" id="Jdj-bj-KqU"/>
                 <outlet property="nextButton" destination="gWQ-jh-oDz" id="rQe-1H-IXW"/>
                 <outlet property="outerView" destination="iN0-l3-epB" id="Bia-4i-Rsv"/>
                 <outlet property="previousButton" destination="kGj-cs-a5c" id="r7y-tC-m6k"/>
-                <outlet property="pronounciationLabel" destination="T7B-gD-toa" id="ODF-gU-FH4"/>
-                <outlet property="speakerButton" destination="AfI-Ah-mbh" id="zvO-GD-dzg"/>
-                <outlet property="wordLabel" destination="sSS-W1-qzl" id="0AM-Z6-z4B"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -53,70 +45,6 @@
                         <action selector="nextButtonAction:" destination="-1" eventType="touchUpInside" id="oFS-Yh-62Z"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xz-6s-jWP">
-                    <rect key="frame" x="24" y="356" width="345" height="140"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ksp-MB-CXb">
-                            <rect key="frame" x="10" y="10" width="325" height="120"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meaning of Lorem Ipsum.Meaning of Lorem Ipsum. Meaning of Lorem Ipsum.Meaning of Lorem Ipsum." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sZ-ns-y2T">
-                                    <rect key="frame" x="0.0" y="0.0" width="325" height="61"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phf-OJ-K0o">
-                                    <rect key="frame" x="0.0" y="85" width="325" height="35"/>
-                                    <color key="backgroundColor" red="0.96862745098039216" green="0.75294117647058822" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="35" id="r6u-G3-tzf"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title=" Reveal Meaning  ">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <state key="selected" title="Hide Meaning"/>
-                                    <connections>
-                                        <action selector="hideMeaningButtonAction:" destination="-1" eventType="touchUpInside" id="KLm-Ky-usH"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.38823529411764707" green="0.39215686274509803" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="ksp-MB-CXb" firstAttribute="leading" secondItem="2xz-6s-jWP" secondAttribute="leading" constant="10" id="3Fg-y6-adJ"/>
-                        <constraint firstAttribute="bottom" secondItem="ksp-MB-CXb" secondAttribute="bottom" constant="10" id="44l-x8-Qqt"/>
-                        <constraint firstAttribute="trailing" secondItem="ksp-MB-CXb" secondAttribute="trailing" constant="10" id="IuN-2C-l41"/>
-                        <constraint firstItem="ksp-MB-CXb" firstAttribute="top" secondItem="2xz-6s-jWP" secondAttribute="top" constant="10" id="xdA-2y-sE1"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pronounciation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7B-gD-toa">
-                    <rect key="frame" x="139.33333333333334" y="300.66666666666669" width="114.33333333333334" height="20.333333333333314"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="0.60283801020408168" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-YR-dRq">
-                    <rect key="frame" x="158.33333333333334" y="264.66666666666669" width="76.333333333333343" height="22"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSS-W1-qzl">
-                            <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="22"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfI-Ah-mbh">
-                            <rect key="frame" x="52.333333333333314" y="0.0" width="24" height="22"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="speaker"/>
-                            <connections>
-                                <action selector="speakerButtonAction:" destination="-1" eventType="touchUpInside" id="cUO-zc-Xh1"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5X-Wq-STi" userLabel="ChapterView">
                     <rect key="frame" x="76" y="35" width="240" height="48"/>
                     <subviews>
@@ -154,24 +82,15 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q5X-Wq-STi" secondAttribute="trailing" constant="77" id="28Y-5f-ASy"/>
                 <constraint firstItem="q5X-Wq-STi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="76" id="IWX-Gi-id6"/>
                 <constraint firstItem="kGj-cs-a5c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="JJA-ns-9zm"/>
-                <constraint firstAttribute="trailing" secondItem="2xz-6s-jWP" secondAttribute="trailing" constant="24" id="U8i-ly-Wik"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gWQ-jh-oDz" secondAttribute="bottom" constant="1" id="VND-q9-qf2"/>
-                <constraint firstItem="2xz-6s-jWP" firstAttribute="centerX" secondItem="T7B-gD-toa" secondAttribute="centerX" id="ZTo-jJ-0fk"/>
                 <constraint firstItem="q5X-Wq-STi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-24" id="he8-U4-ISe"/>
-                <constraint firstItem="2xz-6s-jWP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="it2-it-RYK"/>
-                <constraint firstItem="T7B-gD-toa" firstAttribute="top" secondItem="KzY-YR-dRq" secondAttribute="bottom" constant="14" id="jkh-f4-PVN"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gWQ-jh-oDz" secondAttribute="trailing" constant="16" id="kwO-Bg-9CJ"/>
-                <constraint firstItem="2xz-6s-jWP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kyM-eO-t6l"/>
-                <constraint firstItem="KzY-YR-dRq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l9i-cX-Fv6"/>
-                <constraint firstItem="2xz-6s-jWP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="mcX-Ta-xab"/>
-                <constraint firstItem="2xz-6s-jWP" firstAttribute="top" secondItem="T7B-gD-toa" secondAttribute="bottom" constant="35" id="r8h-El-wJi"/>
                 <constraint firstItem="kGj-cs-a5c" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="vjF-Mt-Z8y"/>
             </constraints>
             <point key="canvasLocation" x="-63.358778625954194" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <image name="speaker" width="24" height="18"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
