@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Flashcard Words-->
+        <!--Cards-->
         <scene sceneID="ESO-Sp-Qr3">
             <objects>
                 <viewController id="SSt-DU-z1O" customClass="ViewController" customModule="Cards_Swipe" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-fF-0g6" customClass="CustomView" customModule="VC_Over_View" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-fF-0g6" customClass="CustomView" customModule="Cards_Swipe" customModuleProvider="target">
                                 <rect key="frame" x="20" y="123" width="353" height="715"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -72,7 +72,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Flashcard Words" id="n9b-B5-YeE"/>
+                    <navigationItem key="navigationItem" title="Cards" id="n9b-B5-YeE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzb-Gu-VB1" sceneMemberID="firstResponder"/>
             </objects>

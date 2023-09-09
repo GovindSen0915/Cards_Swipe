@@ -21,9 +21,9 @@ class CustomView: UIView {
     
     @IBOutlet weak var outerView: UIView!
     
-    @IBOutlet weak var chapterView: UIView!
-    @IBOutlet weak var chapterNumber: UILabel!
-    @IBOutlet weak var chapterName: UILabel!
+//    @IBOutlet weak var chapterView: UIView!
+//    @IBOutlet weak var chapterNumber: UILabel!
+//    @IBOutlet weak var chapterName: UILabel!
     
     weak var delegate: CustomViewProtocol?
     
@@ -34,8 +34,8 @@ class CustomView: UIView {
         self.outerView.layer.borderWidth = 1
         self.outerView.layer.borderColor = .init(genericCMYKCyan: 0, magenta: 0, yellow: 0, black: 1, alpha: 0)
         
-        self.chapterView.layer.cornerRadius = 16
-        self.chapterView.layer.borderWidth = 1
+//        self.chapterView.layer.cornerRadius = 16
+//        self.chapterView.layer.borderWidth = 1
         
         setup()
         
