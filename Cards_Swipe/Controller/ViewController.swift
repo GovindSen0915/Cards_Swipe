@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             swipeableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
         
-        swipeableView.allowedDirection = Direction.Left
+        swipeableView.allowedDirection = [Direction.Left, Direction.Right]
     }
     
     func nextCardView() -> UIView? {
